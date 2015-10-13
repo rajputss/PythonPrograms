@@ -1,0 +1,10 @@
+user = input("Enter your username: ")
+file_object1 = open("username1.txt", "a")
+file_object1.write(user + "\n")
+file_object1.close()
+
+file_object2 = open("username1.txt", "r")
+userlist = file_object2.read()
+print ("The previous users of this program were:")
+print (userlist)
+file_object2.close()
